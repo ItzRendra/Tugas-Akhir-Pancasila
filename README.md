@@ -14,7 +14,8 @@ git clone https://github.com/ItzRendra/Tugas-Akhir-Pancasila.git
 
 ### make new branch
 ```
-git checkout -b new-branch
+git branch new-branch
+git checkout new-branch
 git add . 
 
 ```
