@@ -19,10 +19,16 @@ git checkout new-branch
 git add . 
 
 ```
+open github and request pull
 
 ### commit and push to new branch
 ```
 git commit -m "init new branch"
 git push origin new-branch
 ```
-save
+
+### Update Repository
+```
+git checkout main 
+git pull origin main
+```
