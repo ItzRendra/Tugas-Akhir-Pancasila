@@ -6,13 +6,13 @@ git clone https://github.com/ItzRendra/Tugas-Akhir-Pancasila.git
 ```
 
 ## to do list
-- inserting news min **10** -> Policies.html
+- inserting news min **10** -> news.html
 - debate videos and fact checking -> Debate.html, pdebate.html, vpdebate.html
-- 01 -Alley
-- 02 -Rafli
+- 01 - Alley
+- 02 - Rafli
 - 03 - Raka
 
-<!-- ### make new branch
+### make new branch
 ```
 git checkout -b new-branch
 git add . 
@@ -23,4 +23,4 @@ git add .
 ```
 git commit -m "init new branch"
 git push origin new-branch
-``` -->
+```
