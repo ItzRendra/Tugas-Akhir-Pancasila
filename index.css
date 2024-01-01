@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+/*FOR NAVIGATION*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+.navigasi * {
+    padding: 0;
+}
+.navigasi nav{
+  background: black;
+  padding: 5px 40px;
+}
+.navigasi nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.navigasi nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+.navigasi nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+.navigasi nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: lightgray;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.navigasi nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+.navigasi nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+.navigasi nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+.navigasi nav ul li:hover a{
+  color: lightgray;
+}
+.navigasi nav ul li i{
+  font-size: 23px;
+}
+/*NAVIGATION ENDS*/
+html, body {
+    height: 100%;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+}
+.navigasi {
+    flex-grow:1;
+}
+
+/*INDEX.HTML*/
+.page-title {
+  position: absolute;
+  top: 60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1; 
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight:lighter;
+}
+
+.bod {
+    display: grid;
+    height: 100%;
+    flex-grow: 9;
+    color: white;
+    justify-self: center;
+    background-image: url(bat.jpg);
+}
+.bod a {
+    color: white;
+    text-decoration: none;
+}
+.bod a:hover{
+  transform: scale(1.1);
+  transition: all, 0.5s;
+}
+.bod0 {
+    display: grid;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+.bod1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
+.fighter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    border-color: black;
+    border-width: 10px;
+    gap:1rem;
+}
+.fighter:hover{
+  transform: scale(1.05);
+  transition: all .5s;
+}
+.fighter:hover h2{
+  transform: scale(1.07);
+  transition: all .4s;
+}
+
+.butt {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.fighter h1 {
+  margin-top: 10px; /* Adjust as needed */
+  border-bottom: 3px solid white; /* Use 'solid' for a visible border */
+  font-size: 100px;
+  font-weight: light;
+}
+
+.fighter h2 {
+  font-weight: light; /* Use 'normal' instead of 'light' for regular weight */
+}
+

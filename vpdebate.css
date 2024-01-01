@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+/*FOR NAVIGATION*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+.navigasi * {
+    padding: 0;
+}
+.navigasi nav{
+  background: black;
+  padding: 5px 40px;
+}
+.navigasi nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.navigasi nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+.navigasi nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+.navigasi nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: lightgray;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.navigasi nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+.navigasi nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+.navigasi nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+.navigasi nav ul li:hover a{
+  color: lightgray;
+}
+.navigasi nav ul li i{
+  font-size: 23px;
+}
+/*NAVIGATION ENDS*/
+
